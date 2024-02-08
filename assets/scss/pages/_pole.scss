@@ -234,3 +234,41 @@ footer{
     background-color: rgb(212, 193, 193);
     margin: 10px 0 10px 0;
 }
+
+
+
+#game-title{
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    background-image: url(/assets/img/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .game_title{
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 30px;
+            margin-bottom: 0;
+            color: white;
+            font-weight: 500;
+        }
+    }
+}
+
+.game_number{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    p{
+        margin-bottom: 0;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
