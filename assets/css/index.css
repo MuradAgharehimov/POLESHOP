@@ -239,6 +239,8 @@ footer .games_footer .copyright p {
   margin-bottom: 0;
   color: white;
   font-weight: 500;
+  line-height: 1.2;
+  font-family: Poppins;
 }
 
 .game_number {
