@@ -14,6 +14,7 @@ function getProducts () {
         <img src="${item.image}" alt="">
         <p class="title">${item.title}</p>
         <p class="price">${item.price}</p>
+        <p class="count">${item.count}</p>
         <button onclick="removeItem(${index})">Remove from cart</button>
 
         `

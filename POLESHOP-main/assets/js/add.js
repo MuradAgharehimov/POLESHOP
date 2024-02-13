@@ -1,7 +1,6 @@
 const proList = document.getElementById('products')
 const titleInp = document.getElementById('titleInp')
 const priceInp = document.getElementById('priceInp')
-const imageInp = document.getElementById('imageInp')
 const myForm = document.getElementById('myForm')
 const axtarInp = document.getElementById('axtar')
 const axtarBtn = document.getElementById('axtarBtn')
@@ -15,7 +14,6 @@ function postProduct (e) {
     axios.post('https://65675cba64fcff8d73103f34.mockapi.io/xpolee', {
         title: titleInp.value,
         price: priceInp.value,
-        image: imageInp.value
     })
     .then( res => {
         getData()

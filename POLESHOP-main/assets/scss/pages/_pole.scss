@@ -28,6 +28,7 @@ header{
                 ul{
                     display: flex;
                     gap: 20px;
+                    margin-bottom: 0;
                     li{
                         list-style: none;
                         a{
@@ -49,6 +50,7 @@ header{
                     gap: 20px;
                     justify-content: center;
                     align-items: center;
+                    margin-bottom: 0;
                     li{
                         list-style: none;
                         a{
@@ -64,11 +66,22 @@ header{
                 }
             }
         }
-        @media(max-width:768px){
-            .header_res{
+    }
+    @media(max-width:768px){
+        .header_back{
+            display: none;
+        }
+    }
+}
+
+.header{
+    width: 100%;
+    .navbar{
+       @media(max-width:991px){
+            form{
                 display: none;
             }
-        }
+       }
     }
 }
 
@@ -503,25 +516,60 @@ footer{
 
 
   .hulk .card-front {
-    background-image: url(https://cdn.kibrispdr.org/data/891/wallpaper-point-blank-keren-54.jpg);
+    background-image: url(/assets/img/pb_cart.jpg);
   }
   .hulk .card-back {
-    background-image: url(https://w0.peakpx.com/wallpaper/45/1/HD-wallpaper-point-blank-hide-games-girl-shooting.jpg);
+    background-image: url(/assets/img/pb_back_cart.jpg);
   }
   .valorant .card-front {
-    background-image: url(https://www.mordeo.org/files/uploads/2023/03/Jokes-Over-You-Valorant-4K-Ultra-HD-Mobile-Wallpaper.jpg);
+    background-image: url(/assets/img/valorant_cart.jpg);
   }
   .valorant .card-back {
-    background-image: url(https://artfiles.alphacoders.com/143/thumb-143404.jpg);
+    background-image: url(/assets/img/valorant_back_cart.jpg);
   }
   .fortnite .card-front {
-    background-image: url(https://www.kolpaper.com/wp-content/uploads/2021/12/fortnite-wallpaper-kolpaper-6.jpg);
+    background-image: url(/assets/img/fortnite_cart.jpg);
   }
   .fortnite .card-back {
-    background-image: url(https://w0.peakpx.com/wallpaper/837/516/HD-wallpaper-crystal-fortnite-i-hope-u-like-it.jpg);
+    background-image: url(/assets/img/fortnite_back_cart.jpg);
+  }
+  .clashof .card-front {
+    background-image: url(/assets/img/clash_first.jpg);
+  }
+  .clashof .card-back {
+    background-image: url(/assets/img/clash_back.jpg);
+  }
+  .royale .card-front {
+    background-image: url(/assets/img/CLASHROYALE.jpg);
+  }
+  .royale .card-back {
+    background-image: url(/assets/img/clashroyalex.jpg);
+  }
+  .fire .card-front {
+    background-image: url(/assets/img/freeedit.jpg);
+  }
+  .fire .card-back {
+    background-image: url(/assets/img/freefire.jpg);
+  }
+  .steam .card-front {
+    background-image: url(/assets/img/steam.jpg);
+  }
+  .steam .card-back {
+    background-image: url(/assets/img/steam_back.jpg);
+  }
+  .brawl .card-front {
+    background-image: url(/assets/img/brawl_back.jpg);
+  }
+  .brawl .card-back {
+    background-image: url(/assets/img/brawlstars.jpg);
   }
 
 
 
 
+
+
+
+
+  
 
