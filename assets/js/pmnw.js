@@ -9,7 +9,7 @@ async function getProduct() {
         if (item.count === undefined) {
             item.count = 1;
         }
-        if (item.title.startsWith("Pubg")) { 
+        if (item.title.startsWith("PMNW")) { 
             const box = document.createElement("tr");
             box.className = 'boxDiv';
             box.innerHTML = `

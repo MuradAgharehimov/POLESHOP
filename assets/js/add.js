@@ -1,7 +1,6 @@
 const proList = document.getElementById('products')
 const titleInp = document.getElementById('titleInp')
 const priceInp = document.getElementById('priceInp')
-const imageInp = document.getElementById('imageInp')
 const myForm = document.getElementById('myForm')
 const axtarInp = document.getElementById('axtar')
 const axtarBtn = document.getElementById('axtarBtn')
@@ -15,7 +14,6 @@ function postProduct (e) {
     axios.post('https://65675cba64fcff8d73103f34.mockapi.io/xpolee', {
         title: titleInp.value,
         price: priceInp.value,
-        image: imageInp.value
     })
     .then( res => {
         getData()
@@ -32,9 +30,12 @@ function getData () {
         db = res.data
         db.map(item => {
             const box = document.createElement('tr')
+            box.className = "boxDivx";
             box.innerHTML = ` <td>${item.title}</td> 
              <td>${item.price}</td> 
+             <td>
              <button onclick="deleteItem(${item.id})">Delete</button>
+             </td>
              `
              proList.appendChild(box)
         })
@@ -60,7 +61,9 @@ function getByName () {
             const box = document.createElement('tr')
             box.innerHTML = ` <td>${item.title}</td> 
              <td>${item.price}</td> 
-             <button onclick="deleteItem(${item.id})">Delete</button>
+             <td>
+             <button onclick="deleteItem(${item.id})"><i class="fa-solid fa-trash-can"></i><span>Delete</span></button>
+             </td>
              `
              proList.appendChild(box)
         })

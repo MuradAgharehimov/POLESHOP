@@ -5,16 +5,15 @@ function getProducts () {
     let cart = JSON.parse(localStorage.getItem('cart')) || []
     console.log(cart);
     cart.map((item,index )=> {
-        const box = document.createElement('div')
+        const box = document.createElement('tr')
         box.className = "boxDivx col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12";
         box.innerHTML =`
-        
-        
-        
-        <img src="${item.image}" alt="">
-        <p class="title">${item.title}</p>
-        <p class="price">${item.price}</p>
-        <button onclick="removeItem(${index})">Remove from cart</button>
+        <td class="title">${item.title}</td>
+        <td class="price">${item.price}</td>
+        <td class="count">${item.count}</td>
+        <td>
+        <button onclick="removeItem(${index})"><i class="fa-solid fa-trash-can"></i><span>Remove</span></button>
+        </td>
 
         `
         div.appendChild(box)
